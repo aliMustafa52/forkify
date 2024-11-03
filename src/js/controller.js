@@ -135,5 +135,6 @@ function init() {
   recipeView.addHandlerBookmark(controlAddBookmarks);
   bookmarkView.addHanlerRender(controlRenderBookmarks);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  console.log('Welcome');
 }
 init();
