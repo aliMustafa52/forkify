@@ -43,7 +43,6 @@ export async function loadSearchResults(query) {
     state.search.query = query;
     //https://forkify-api.herokuapp.com/api/v2/recipes?search=pizza
     const data = await Ajax(`${API_URL}?search=${query}&key=${API_KEY}`);
-    console.log(data);
 
     if (data.data.recipes.length === 0)
       throw new Error(

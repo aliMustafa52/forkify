@@ -52,7 +52,6 @@ async function controlSearchResults() {
 
     // 3)load search results
     await model.loadSearchResults(query);
-    console.log(model.state.search.results);
 
     //4) render search results
     resultsView.render(model.getSearchResultsPage());
@@ -135,6 +134,5 @@ function init() {
   recipeView.addHandlerBookmark(controlAddBookmarks);
   bookmarkView.addHanlerRender(controlRenderBookmarks);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log('Welcome');
 }
 init();
